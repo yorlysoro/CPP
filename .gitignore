@@ -1,0 +1,9 @@
+*.exe
+*.o
+*.so
+*.c~
+*.h~
+*.c++~
+*.hpp~
+*.out
+*makefile

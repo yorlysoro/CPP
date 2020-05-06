@@ -1,0 +1,37 @@
+#include <iostream>
+
+using namespace std;
+
+int FnIntBusquedaBinaria(int lista[], int dato);
+
+void SbBuscar(int lista[]int dato);
+
+int main()
+{
+    int lista[16] = {12,45,78,9,6,5,4,2,1,0,12,45,78,63,25,98};
+    buscar(dato);
+}
+
+int FnIntBusquedaBinaria(int lista[], int dato)
+{
+    int izquierda, derecha, medio;
+    izquierda = 0;
+    derecha = sizeof(lista) / 4;
+    while(izquierda <= derecha)
+    {
+        medio = (izquierda+derecha)/2;
+        if(dato == lista[medio])
+            return medio;
+        else if(dato < lista[medio])
+            derecha = medio - 1;
+        else
+            izquierda = medio + 1;
+    }
+    return false;
+}
+
+void SbBuscar(int lista[], int dato)
+{
+    if(FnIntBusquedaBinaria(lista,dato))
+        cout << ""
+}

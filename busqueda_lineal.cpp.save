@@ -1,0 +1,36 @@
+#include <iostream>
+
+using namespace std;
+int busquedalineal(int dato);
+void buscar(int dato);
+
+int lista[16] = {12,45,78,9,6,5,4,2,1,0,12,45,78,63,25,98};
+int main(void)
+{
+    buscar(100);
+}
+
+int busquedalineal(int dato)
+{
+    int x;
+    for(x = 0; x < 16;x++)
+    {
+        if(lista[x] == dato)
+        {
+            return x;
+        }
+    }
+    return false;
+}
+
+void buscar(int dato)
+{
+    if(busquedalineal(dato) == false)
+    {
+        cout << "No se encontro el dato" << endl;
+    }
+    else
+    {
+        cout << "Se encontro el dato en el indice " << busquedalineal(dato) << endl;
+    }
+}
